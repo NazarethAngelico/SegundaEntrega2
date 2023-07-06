@@ -1,0 +1,66 @@
+@import "../base/variable";
+@import "../base/media-queries";
+footer {
+  background-color: $color-primario;
+  .contenedor-footer {
+    margin-top: 3%;
+    padding: 1%;
+    background-color: $color-primario;
+    display: flex;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    justify-content: space-around;
+    font-family: $tipografia-general;
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .sec-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: rem;
+    padding: 10px;
+    gap: 8px;
+    font-family: $tipografia-general;
+    @include mobile {
+      width: 100%;
+      font-size: 8px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .sec-footer-container h4 {
+    font-family: $tipografia-general;
+    font-size: 18px;
+    text-align: center;
+  }
+  .sec-footer-container h5 {
+    font-family: $tipografia-general;
+    font-size: 20px;
+  }
+
+  .img-redes-footer img {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .redes-texto-footer {
+    display: flex;
+    align-items: center;
+  }
+  .icon-pagos {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    width: 40px;
+    align-items: flex-start;
+  }
+  .icon-pagos img {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

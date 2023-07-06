@@ -1,0 +1,14 @@
+@import "../base/variable";
+header {
+  background-color: rgb(175, 39, 39);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $tipografia-general;
+  z-index: 2;
+
+  .navbar-toggler {
+    z-index: 2;
+  }
+}
